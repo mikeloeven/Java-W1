@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class StringRephraise {
+	
+public static void main(String[] args) {
+		
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Text Rearranging");
+		double xy[] = new double[4];
+		System.out.println("Enter x1");
+		xy[1] = keyboard.nextDouble();
+		System.out.println("Enter y1");
+		xy[3] = keyboard.nextDouble();
+		System.out.println("Enter x2");
+		xy[0] = keyboard.nextDouble();
+		System.out.println("Enter y2");
+		xy[2] = keyboard.nextDouble();
+		
+		
+		double XY= (Math.pow((xy[0]-xy[1]),2) + Math.pow((xy[2]-xy[3]),2));
+		XY = Math.pow(XY, 0.5);
+		System.out.println("Distance = " + XY +" Units?");
+			
+			
+	
+	}
+
+}
